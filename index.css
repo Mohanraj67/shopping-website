@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{font-family: 'Poppins', sans-serif;}
+.contaner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.sub-contaner{
+    display: flex;
+    column-gap: 20px;
+}
+.sub-contaners a{
+    text-decoration: none;
+    color: darkslateblue;
+}
+.sub-contaners a:hover{
+    text-decoration: underline;
+    color:black;
+
+}
+.menu{
+    display: none;
+}
+.side-nav{
+    background-color: gray;
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    color: white;
+    padding: 20px;
+    top: 0;
+    left:-60%;
+    transition:2s;
+    z-index: 2;
+    
+}
+.sub-side{
+    margin-bottom: 10% ;
+}
+.sub-side a{
+color: white;
+text-decoration: none;
+}
+.sub-side a:hover{
+    text-decoration: underline;
+    color: aqua;
+}
+.header{
+    justify-content: center;
+    display: flex;
+    padding: 50px;
+    gap: 20px;
+}
+.buttons{
+    background-color:darkslateblue;
+    color: white;
+    padding: 20px 40px 20px 40px;
+    margin-top: 30px;
+}
+.heading{
+    padding: 20px;
+}
+.heading-ss{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading-sss{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.heading-sss div{
+background-color: lightgray;
+padding: 20px;
+border-radius: 10px;
+}
+.arrival-contaner{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.new-arrivals {
+    position:relative;
+    flex-basis: 25%; 
+    z-index: 1;
+}
+.new-arrivals button{
+    padding: 5% 10% 5% 10%;
+    position: absolute;
+    top:50%;
+    left: 10%;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: medium;
+}
+.join{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.join input{
+    width: 75%;
+    padding: 10px;
+}
+.join button{
+    margin-top: 10px;
+    background-color: darkblue;
+    color: white;
+    padding:10px;
+    border-radius: 5px;
+}
+.fotter{
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding:40px;
+    margin-top: 30px;
+    font-size: medium;
+}
+.product{
+    margin-top: 20px;
+}
+.search{
+    width: 80%;
+    border: solid black 2px;
+    padding: 10px; 
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    justify-content:space-between;
+}
+.search input{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+.product-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.products{
+    text-align: center;
+    flex-basis: 20%;
+}
+.cont{
+
+    height: 100vh;
+    width: 100%;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+.sub-cont{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    height: 80vh;
+    width: 80vw;
+    justify-content: space-around;
+    
+}
+.ff{
+    width: 60%;
+    margin-left: 20px;
+}
+.sub-cont input{
+    padding: 20px;
+    }
+    .sub-cont button{
+        width: 10%;
+        background-color: darkblue;
+        color: white;
+        padding: 10px;
+        margin-left: 20px;
+    }
+    .sub-cont textarea{
+        width: 64%;
+    }
+
+@media screen and (max-width:700px){
+    .menu{
+        display: block;
+    }
+    .sub-contaners{
+        display: none;
+    }
+    .image{
+        display: none;
+    }
+    .heading-ss{
+        display:none;
+    }
+    .headinfg.sss{
+    flex-direction: column;
+    }
+    
+
+}
